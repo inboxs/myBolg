@@ -292,13 +292,20 @@ a {
 #container .left-col .intrude-less {
   width: 76%;
   text-align: center;
-  margin: 112px auto 0;
+  margin: 66px auto 0;
+}
+#container .left-col .intrude-less .donateIcon-position {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  margin-left: -28px;
 }
 #container .left-col .intrude-less #donate {
   display: none;
-  position: fixed;
-  top: 280px;
-  left: 25px;
+  position: absolute;
+  bottom: 60px;
+  left: -96px;
+  z-index: 9;
 }
 #container .left-col .intrude-less #donate img {
   border-radius: 5px;
@@ -831,11 +838,11 @@ a {
 }
 #header .header-nav .social .donateIcon {
   display: block;
-  width: 56px;
+  width: 45px;
   margin: auto;
-  height: 56px;
-  line-height: 56px;
-  font-size: 20px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 15px;
   color: #fff;
   border: none;
   background: #4094c7;

@@ -219,31 +219,31 @@
                   关于我</a></li>
               
             </ul>
-          </nav>
-          <nav class="header-nav">
-            <ul class="social">
-              
-              <a class="fa Email" href="mailto:123@123.com" title="Email"></a>
-              
-              <a class="fa GitHub" href="#" title="GitHub"></a>
-              
-              <a class="fa RSS" href="/atom.xml" title="RSS"></a>
-              
-            </ul>
             
             <ul class="social">
-              <div style="position: absolute; top: 95%; left: 50%; margin-left: -30px;">
+              <div class="donateIcon-position">
                 <p style="display: block">
-                  <a class="donateIcon" href="javascript:void(0)" onmouseout="
-                        var qr = document.getElementById('donate');
-                        qr.style.display='none';
-                    " onmouseenter="
-                        var qr = document.getElementById('donate');
-                        qr.style.display='block';
-                    ">
+                  <a
+                          class="donateIcon"
+                          href="javascript:void(0)"
+                          onmouseout="
+                                            var qr = document.getElementById('donate');
+                                            qr.style.display='none';
+                                        "
+                          onmouseenter="
+                                            var qr = document.getElementById('donate');
+                                            qr.style.display='block';
+                                        ">
                     赏
                   </a>
                 </p>
+                
+                <div id="donate">
+                  <img id="multipay" src="https://blog.t00ls.cn/pages/donate" width="250px"
+                       alt="John Doe Multipay"/>
+                  <div class="triangle"></div>
+                </div>
+                
               </div>
             </ul>
             
@@ -287,11 +287,12 @@
       </div>
     </div>
   </header>
+
   
-  <div id="donate">
-    <img id="multipay" src="https://blog.t00ls.cn/pages/donate" width="250px" alt="John Doe Multipay" />
-    <div class="triangle"></div>
-  </div>
+    <div id="donate">
+      <img id="multipay" src="https://blog.t00ls.cn/pages/donate" width="250px" alt="John Doe Multipay" />
+      <div class="triangle"></div>
+    </div>
   
   <!-- 添加每日一言 -->
 

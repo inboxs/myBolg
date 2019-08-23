@@ -2,34 +2,34 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://t00ls.cn</loc>
+        <loc>https://blog.t00ls.cn</loc>
         <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
     
     <url>
-        <loc>https://t00ls.cn/photos/</loc>
+        <loc>https://blog.t00ls.cn/photos/</loc>
         <lastmod>2019-08-05T14:26:10.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://t00ls.cn//404.html</loc>
+        <loc>https://blog.t00ls.cn//404.html</loc>
         <lastmod>2019-08-02T04:42:25.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://t00ls.cn/about/</loc>
+        <loc>https://blog.t00ls.cn/about/</loc>
         <lastmod>2019-08-01T15:43:37.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://t00ls.cn/tags/</loc>
+        <loc>https://blog.t00ls.cn/tags/</loc>
         <lastmod>2019-08-01T15:42:10.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>

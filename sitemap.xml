@@ -3,12 +3,12 @@
 
 
     <sitemap>
-        <loc>https://t00ls.cn/post-sitemap.xml</loc>
+        <loc>https://blog.t00ls.cn/post-sitemap.xml</loc>
         <lastmod>2019-08-22T01:09:59.000Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>https://t00ls.cn/page-sitemap.xml</loc>
+        <loc>https://blog.t00ls.cn/page-sitemap.xml</loc>
         <lastmod>2019-08-05T14:26:10.000Z</lastmod>
     </sitemap>
 

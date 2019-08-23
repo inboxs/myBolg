@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://t00ls.cn/"/>
+  <updated>2019-08-22T01:09:59.000Z</updated>
+  <id>https://t00ls.cn/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://t00ls.cn/2019/07/12/MAC%E4%B8%8B%E7%9A%84Intellij%20IDEA%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    <id>https://t00ls.cn/2019/07/12/MAC下的Intellij IDEA常用快捷键/</id>
+    <published>2019-07-12T07:19:12.000Z</published>
+    <updated>2019-08-22T01:09:59.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="MAC下的Intellij-IDEA常用快捷键"><a href="#MAC下的Intellij-IDEA常用快捷键" class="headerlink" title="MAC下的Intellij IDEA常用快捷键"></a>MAC下的Intellij IDEA常用快捷键</h1><p>alt+f7 : 查找在哪里使用 相当于eclipse的ctrl+shift+G</p><p>command+alt+f7 : 这个是查找选中的字符在工程中出现的地方，可以不是方法变量类等，这个和上面的有区别的</p><p>command＋F7 : 可以查询当前元素在当前文件中的引用，然后按F3可以选择 ，功能基本同上<br>选中文本，按command+shift+F7 ，高亮显示所有该文本，按Esc高亮消失。<br>选中文本，按Alt+F3 ，逐个往下查找相同文本，并高亮显示。</p><p>shift+f3 : 就是往上找</p><p>ctrl+enter : 出现生成get,set方法的界面</p><p>shift+enter : 换到下一行</p><p>command+N : 查找类</p><p>command+shift+N : 查找文件</p><p>command+R : 替换</p><p>ctrl+shift+R : 可以在整个工程或着某个目录下面替换变量</p><p>command+Y : 查看当前方法实现</p><p>command+D : 复制当前行到下一行</p><p>ctrl+shift+J : 把多行连接成一行，会去掉空格的行</p><p>command+J : 可以生成一些自动代码，比如for循环</p><p>command+B : 找变量的来源 同F4 查找变量来源</p><p>ctrl+shift+B : 找变量所属的类</p><p>command+G : 定位</p><p>command+F : 在当前文件里查找文本 f3向下看，shift+f3向上看</p><p>ctrl+shift+F : 可以在整个工程或着某个目录下面查找变量 相当于eclipse里的ctrl+H</p><p>alt+shift+C :最近修改的文件</p><p>command+E :最近打开的文件</p><p>alt+enter :导入包，自动修改</p><p>command+alt+L :格式化代码command+alt+I : 自动缩进，不用多次使用tab或着backspace键，也是比较方便的</p><p>ctrl+shift+space :代码补全，这个会判断可能用到的，这个代码补全和代码提示是不一样的</p><p>command+P : 方法参数提示</p><p>command+alt+T : 把选中的代码放在 TRY{} IF{} ELSE{} 里</p><p>command+X :剪切删除行</p><p>command+shift+V : 可以复制多个文本</p><p>command+shift+U : 大小写转换</p><p>alt+f1 :查找文件所在目录位置</p><p>command+/ :注释一行或着多行 //</p><p>ctrl+shift+/ : 注释/…/</p><p>command+alt+左右箭头 : 返回上次编辑的位置</p><p>shift+f6 :重命名</p><p>command+shift+上下箭头 : 把代码上移或着下移</p><p>command+[ 或 ] : 可以跳到大括号的开头结尾</p><p>command+f12 :可以显示当前文件的结构</p><p>command+alt+B :可以导航到一个抽象方法的实现代码</p><p>command+shift+* :列编辑</p><p>alt+f8 : debug时选中查看值f8相当于eclipse的f6跳到下一步</p><p>shift+f8 :相当于eclipse的f8跳到下一个断点</p><p>alt+shift+f7 :这个是强制进入代码</p><p>command+f9 debug :运行java类</p><p>ctrl+shift+f10 :正常运行java类</p><p>command+f2 :停止运行</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;MAC下的Intellij-IDEA常用快捷键&quot;&gt;&lt;a href=&quot;#MAC下的Intellij-IDEA常用快捷键&quot; class=&quot;headerlink&quot; title=&quot;MAC下的Intellij IDEA常用快捷键&quot;&gt;&lt;/a&gt;MAC下的Intellij IDE
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://t00ls.cn/2017/01/17/hello-world/"/>
+    <id>https://t00ls.cn/2017/01/17/hello-world/</id>
+    <published>2017-01-17T09:39:58.000Z</published>
+    <updated>2019-08-04T17:53:37.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>

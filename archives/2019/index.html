@@ -2,17 +2,13 @@
 <html lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.9.0">
 
-    <!--[if lt IE 9]>
-        <style>body {display: none; background: none !important} </style>
-        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
-    <![endif]-->
+    <!--[if IE]><style>body{display:none;}</style><script>alert('IE浏览器下无法展示效果，请更换浏览器！');var headNode=document.getElementsByTagName('head')[0];var refresh=document.createElement('meta');refresh.setAttribute('http-equiv','Refresh');refresh.setAttribute('Content','0; url=http://outdatedbrowser.com/');headNode.appendChild(refresh);</script><![endif]-->
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="format-detection" content="telephone=no">
 <meta name="author" content="John Doe">
-
 
 
 
@@ -27,15 +23,9 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
 
 
-
-    <link rel="shortcut icon" href="/assets/blogImg/favicon.jpg">
-
-
-
-    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/blogImg/connect2.jpg">
 
 
 
@@ -43,47 +33,38 @@
 
 
 
-    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
-    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
-
 
 <link rel="stylesheet" href="/css/style.css">
 
 
 
-<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
 <title>Archives: 2019 | Hexo</title>
 
-<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="//cdn.bootcss.com/aos/2.2.0/aos.js"></script>
 
 <script>
-    var yiliaConfig = {
-        fancybox: true,
-        animate: true,
-        isHome: false,
-        isPost: false,
-        isArchive: true,
-        isTag: false,
-        isCategory: false,
-        fancybox_js: "//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.js",
-        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: true
-    }
+var yiliaConfig = {
+    fancybox: true,
+    isHome: false,
+    isPost: false,
+    isArchive: true,
+    isTag: false,
+    isCategory: false,
+    fancybox_js: "//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.js",
+    search: true
+}
 </script>
 
 
-    <script>
-        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
-    </script>
+    <script> yiliaConfig.jquery_ui = [false]; </script>
 
 
 
     <script> yiliaConfig.rootUrl = "\/";</script>
-
-
 
 
 
@@ -121,30 +102,39 @@
 </head>
 </html>
 <body>
-  <div id="container">
-    <div class="left-col">
-    <div class="overlay"></div>
+<div id="container">
+  <div class="left-col">
+    <!--
+<div class="backImg">
+  <img src="" width="312" height="700px"/>
+</div>
+-->
+
+<div class="overlay"></div>
+
 <div class="intrude-less">
   <header id="header" class="inner">
     <a href="/" class="profilepic">
-      <img src="/assets/blogImg/connect.jpg" class="animated zoomIn">
+      <!--
+      <img src="/assets/blogImg/connect1.jpg">
+      -->
+      <img src="/assets/blogImg/connect1.jpg" class="animated zoomIn">
     </a>
     <hgroup>
-      <h1 class="header-author"><a href="/">
-          John Doe</a></h1>
+      <h1 class="header-author"><a href="/">John Doe</a></h1>
     </hgroup>
 
     
 
     
     <form id="search-form">
-      <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
+      <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control"
+             autocomplete="off" autocorrect="off" searchonload="false"/>
       <i class="fa fa-times" onclick="resetSearch()"></i>
     </form>
     <div id="local-search-result"></div>
     <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
     
-
 
     
     <div id="switch-btn" class="switch-btn">
@@ -175,21 +165,13 @@
       <div class="tips-box hide">
         <div class="tips-arrow"></div>
         <ul class="tips-inner">
-          <li>
-            菜单
-          </li>
-          <li>
-            标签
-          </li>
+          <li>菜单</li>
+          <li>标签</li>
           
-          <li>
-            友情链接
-          </li>
+          <li>友情链接</li>
           
           
-          <li>
-            关于我
-          </li>
+          <li>目标</li>
           
         </ul>
       </div>
@@ -202,29 +184,26 @@
           <nav class="header-menu">
             <ul>
               
-              <li><a href="/">
-                  主页</a></li>
+              <li><a href=" //t00ls.cn">主页</a></li>
               
-              <li><a href="/archives/">
-                  所有文章</a></li>
+              <li><a href=" /archives/">归档</a></li>
               
-              <li><a href="/photos/">
-                  相册</a></li>
+              <li><a href=" /photos/">相册</a></li>
               
-              <li><a href="/tags/">
-                  分类&amp;标签</a></li>
+              <li><a href=" /tags/">分类&amp;标签</a></li>
               
-              <li><a href="/about/">
-                  关于我</a></li>
+              <li><a href=" /tags/">标签云</a></li>
               
             </ul>
           </nav>
           <nav class="header-nav">
             <ul class="social">
               
-              <a class="fa Email" href="mailto:123@123.com" title="Email"></a>
+              <a class="fa Email" href="mailto:admin@admin.com" title="Email"></a>
               
-              <a class="fa GitHub" href="#" title="GitHub"></a>
+              <a class="fa GitHub" href="/" title="GitHub"></a>
+              
+              <a class="fa V2EX" href="#" title="V2EX"></a>
               
               <a class="fa RSS" href="/atom.xml" title="RSS"></a>
               
@@ -232,18 +211,19 @@
             
             <ul class="social">
               <div class="donateIcon-position">
-              <!--<div style="position: absolute; top: 95%; left: 50%; margin-left: -30px;"> -->
                 <p style="display: block">
-                  <a class="donateIcon" href="javascript:void(0)"
-                  onmouseout="
-                        var qr = document.getElementById('donate');
-                        qr.style.display='none';
-                    "
-                    onmouseenter="
-                        var qr = document.getElementById('donate');
-                        qr.style.display='block';
-                    ">
-                    赏
+                  <a
+                          class="donateIcon"
+                          href="javascript:void(0)"
+                          onmouseout="
+                                            var qr = document.getElementById('donate');
+                                            qr.style.display='none';
+                                        "
+                          onmouseenter="
+                                            var qr = document.getElementById('donate');
+                                            qr.style.display='block';
+                                        ">
+                    赞
                   </a>
                 </p>
                 
@@ -257,7 +237,7 @@
             </ul>
             
           </nav>
-          </section>
+        </section>
 
         
         <section class="switch-part switch-part2">
@@ -271,14 +251,25 @@
         <section class="switch-part switch-part3">
           <div id="js-friends">
             
-            <a class="main-nav-link switch-friends-link" href="https://hexo.io">
-              Hexo</a>
+            <a class="main-nav-link switch-friends-link" href="https://github.com/TechCatsLab">TechCatsLab</a>
             
-            <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">
-              GitHub</a>
+            <a class="main-nav-link switch-friends-link" href="https://yangchenglong11.github.io">YangChengLong</a>
             
-            <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">
-              MOxFIVE</a>
+            <a class="main-nav-link switch-friends-link" href="https://jsharkc.github.io">LiuJiaChang</a>
+            
+            <a class="main-nav-link switch-friends-link" href="http://blog.yusank.space">YusanKurban</a>
+            
+            <a class="main-nav-link switch-friends-link" href="https://blog.lizebang.top">Lizebang</a>
+            
+            <a class="main-nav-link switch-friends-link" href="https://github.com/sunanxiang">SunAnXiang</a>
+            
+            <a class="main-nav-link switch-friends-link" href="https://github.com/DoubleWoodH">LinHao</a>
+            
+            <a class="main-nav-link switch-friends-link" href="https://blog.littlechao.top">ShiChao</a>
+            
+            <a class="main-nav-link switch-friends-link" href="https://github.com/Txiaozhe">TangXiaoJi</a>
+            
+            <a class="main-nav-link switch-friends-link" href="https://github.com/LLLeon">JiaChenHui</a>
             
           </div>
         </section>
@@ -288,34 +279,23 @@
         
           <section class="switch-part switch-part4">
             
-            <div id="js-aboutme">
-              专注于前端
-            </div>
+            <div id="js-aboutme">不悲不喜，不卑不亢，努力成为一个更好的程序猿！</div>
           </section>
           
       </div>
     </div>
   </header>
-<!--
-  
-    <div id="donate">
-      <img id="multipay" src="/img/multipay.png" width="250px" alt="John Doe Multipay" />
-      <div class="triangle"></div>
-    </div>
-   -->
-  <!-- 添加每日一言 -->
-
 </div>
-<!--
-<div style="position:absolute; botton:100px; left:0px; width:50%">
 
-  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=250 height=86 src="//music.163.com/outchain/player?type=2&id=27591651&auto=1&height=66"></iframe>
-</div>
--->
+  </div>
+  <div class="hide-left-col" title="隐藏侧栏">
+    <i class="fa fa-angle-double-left"></i>
+  </div>
 
-    </div>
-    <div class="mid-col">
-      <nav id="mobile-nav">
+
+
+  <div class="mid-col">
+    <nav id="mobile-nav">
       <div class="overlay">
           <div class="slider-trigger"></div>
           <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">John Doe</a></h1>
@@ -323,7 +303,7 @@
     <div class="intrude-less">
         <header id="header" class="inner">
             <a href="/" class="profilepic">
-                <img src="/assets/blogImg/connect.jpg" class="animated zoomIn">
+                <img src="/assets/blogImg/connect1.jpg">
             </a>
             <hgroup>
               <h1 class="header-author"><a href="/" title="回到主页">John Doe</a></h1>
@@ -332,35 +312,37 @@
             <nav class="header-menu">
                 <ul>
                 
-                    <li><a href="/">主页</a></li>
+                    <li><a href="//t00ls.cn">主页</a></li>
                 
-                    <li><a href="/archives/">所有文章</a></li>
+                    <li><a href="/archives/">归档</a></li>
                 
                     <li><a href="/photos/">相册</a></li>
                 
                     <li><a href="/tags/">分类&amp;标签</a></li>
                 
-                    <li><a href="/about/">关于我</a></li>
+                    <li><a href="/tags/">标签云</a></li>
                 
                 <div class="clearfix"></div>
                 </ul>
             </nav>
             <nav class="header-nav">
-                        <ul class="social">
-                            
-                                <a class="fa Email" target="_blank" href="mailto:123@123.com" title="Email"></a>
-                            
-                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
-                            
-                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
-                            
-                        </ul>
+                <ul class="social">
+                    
+                        <a class="fa Email" target="_blank" href="mailto:admin@admin.com" title="Email"></a>
+                    
+                        <a class="fa GitHub" target="_blank" href="/" title="GitHub"></a>
+                    
+                        <a class="fa V2EX" target="_blank" href="#" title="V2EX"></a>
+                    
+                        <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                    
+                </ul>
             </nav>
-        </header>                
+        </header>
     </div>
-    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+    <link class="menu-list" tags="标签" friends="友情链接" about="目标"/>
 </nav>
-      <div class="body-wrap">
+    <div class="body-wrap">
   
   
     
@@ -378,8 +360,10 @@
     <header class="archive-article-header">
           <div class="article-meta">
               <a href="/2019/07/12/MAC下的Intellij IDEA常用快捷键/" class="archive-article-date">
-      <time datetime="2019-07-12T07:19:12.000Z" itemprop="datePublished">07-12</time>
+      <time class="published" datetime="2019-07-12T07:19:12.000Z" itemprop="datePublished">07-12 发布</time>
+      
 </a>
+
 
 
         </div>
@@ -391,14 +375,18 @@
   
 
         <div class="article-info info-on-archive">
-          
+          <div class="article-count">
+            
 
-          
+            
+
+          </div>
         </div>
         <div class="clearfix"></div>
     </header>
   </div>
 </article>
+
   
   
     </div></section>
@@ -407,114 +395,149 @@
     
 
 </div>
-      <footer id="footer">
-  <div class="outer">
-    <div id="footer-info">
-      <div class="footer-left">
-        <i class="fa fa-copyright"></i>
-        
-        2015-
-        
-        2019
-        John Doe
-      </div>
-      <!-- 
-      <div class="footer-right">
-        <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a> Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i
-          class="fa fa-heart animated infinite pulse"></i>
-      </div>
-      -->
-    </div>
-    
-    <div class="visit">
-      
-      <span style='display:inline'>
-        <!-- 本站总访问数 -->
-        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_pv"></span>
-        </span>
-      </span>
-      
-      <span>| </span>
-      
-      <span id="busuanzi_container_site_pv" style='display:none'>
-        <!-- 您是第  个小伙伴 -->
-        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
-        </span>
-      </span>
-      
-      
-      <span>| </span>
-      
-      
-      <span id="busuanzi_container_page_pv" style='display:none'>
-        <!-- 本页阅读量 次 -->
-        <span id="page-visit" title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
-        </span>
-      </span>
-      <span>| </span>
-      <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
-      <script>
-        var now = new Date();
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i>
+                2015-2019  T00ls
+            </div>
+            
+              <div class="visit">
+                  
+                      <span id="busuanzi_container_site_pv" style='display:none'>
+                          <span id="site-visit" title="本站到访人数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                          </span>
+                      </span>
+                  
+                  
+                      <span>| </span>
+                  
+                  
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                      <span id="page-visit"  title="本页访问次数"><i class="fa fa-eye" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                      </span>
+                    </span>
+                  
+                  <span>| </span>
+                  <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+                  <script>
+                    var now = new Date();
 
-        function createtime() {
-          var grt = new Date("02/14/2018 12:49:00"); //此处修改你的建站时间或者网站上线时间
-          now.setTime(now.getTime() + 250);
-          days = (now - grt) / 1000 / 60 / 60 / 24;
-          dnum = Math.floor(days);
-          hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
-          hnum = Math.floor(hours);
-          if (String(hnum).length == 1) {
-            hnum = "0" + hnum;
-          }
-          minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
-          mnum = Math.floor(minutes);
-          if (String(mnum).length == 1) {
-            mnum = "0" + mnum;
-          }
-          seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
-          snum = Math.round(seconds);
-          if (String(snum).length == 1) {
-            snum = "0" + snum;
-          }
-          document.getElementById("timeDate").innerHTML = "本站已安全运行 " + dnum + " 天 ";
-          document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
-        }
-        setInterval("createtime()", 250);
-      </script>
-      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-      
+                    function createtime() {
+                      var grt = new Date("02/14/2018 12:49:00"); //此处修改你的建站时间或者网站上线时间
+                      now.setTime(now.getTime() + 250);
+                      days = (now - grt) / 1000 / 60 / 60 / 24;
+                      dnum = Math.floor(days);
+                      hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
+                      hnum = Math.floor(hours);
+                      if (String(hnum).length == 1) {
+                        hnum = "0" + hnum;
+                      }
+                      minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+                      mnum = Math.floor(minutes);
+                      if (String(mnum).length == 1) {
+                        mnum = "0" + mnum;
+                      }
+                      seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+                      snum = Math.round(seconds);
+                      if (String(snum).length == 1) {
+                        snum = "0" + snum;
+                      }
+                      document.getElementById("timeDate").innerHTML = "本站已安全运行 " + dnum + " 天 ";
+                      document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+                    }
+                    setInterval("createtime()", 250);
+                  </script>
+              </div>
+            
+
+            <div class="footer-right">
+            <!--  <i class="fa fa-heart"></i><a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架"> Hexo</a>  Theme <a href="//t00ls.cn" target="_blank" title="3.5">Yelee</a>-->
+            </div>
+
+        </div>
     </div>
-    
-  </div>
 </footer>
 
-    </div>
-    
-<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+  </div>
+  <script type="application/javascript">
+    var hide = false, leftWidth;
+    $('.hide-left-col').click(function () {
+      if (hide) {
+        $('.left-col').css('width', leftWidth)
+        $('.left-col .intrude-less').fadeIn(200)
+        $('#tocButton').fadeIn(200);
+        ($('#switch-btn').css('display') === 'block' && $('#switch-area').css('display') === 'block') || $('#toc').fadeIn(200)
+        $('.hide-left-col').css('left', leftWidth).html('<i class="fa fa-angle-double-left"></i>')
+        $('.mid-col').css('left', leftWidth)
+        $('#post-nav-button').css('left', leftWidth)
+        $('#post-nav-button > a:nth-child(2)').css('display', 'block')
+        hide = false
+      } else {
+        leftWidth = $('.left-col')[0].style.width
+        $('.left-col').css('width', 0)
+        $('.left-col .intrude-less').fadeOut(200)
+        $('#toc').fadeOut(100)
+        $('#tocButton').fadeOut(100)
+        $('.hide-left-col').css('left', 0).html('<i class="fa fa-angle-double-right"></i>')
+        $('.mid-col').css('left', 0)
+        $('#post-nav-button').css('left', 0)
+        $('#post-nav-button > a:nth-child(2)').css('display', 'none')
+        if ($('.post-list').is(':visible')) {
+          $('#post-nav-button .fa-bars,#post-nav-button .fa-times').toggle()
+          $('.post-list').toggle()
+        }
+        hide = true
+      }
+    })
+  </script>
+  
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.3.5/require.min.js"></script>
+<!--
 
-    <script>
-        $(document).ready(function() {
-            var iPad = window.navigator.userAgent.indexOf('iPad');
-            if (iPad > -1 || $(".left-col").css("display") === "none") {
-                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
-                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
-                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
-            }
-            else {
-                var backgroundnum = 8;
-                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
-                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
-            }
+  <script>
+    $(document).ready(function() {
+      var userAgent = window.navigator.userAgent;
+      var iPad = userAgent.indexOf('iPad');
+      var iPhone = userAgent.indexOf('iPhone');
+      if (iPad > -1 || iPhone > -1) {
+        let bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+        let bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+        $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+      } else if (!!userAgent.match(/AppleWebKit.*Mobile.*/) || $(window).width() <= 768) {
+        $("body").css({
+          "background-image": "url(/background/mobile.jpg)",
+          "background-repeat": "no-repeat",
+          "background-attachment": "fixed",
+          "background-size": "cover"
         })
-    </script>
+      } else {
+        var backgroundnum = 9;
+        var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+        $("body").css({
+          "background": backgroundimg,
+          "background-position": "0% 80%",
+          "background-attachment": "fixed",
+          "background-size": "cover"
+        })
+      }
+    })
+  </script>
+
+
+-->
 
 
 
-
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({tex2jax:{inlineMath:[["$$","$$"],["$","$"],["\\(","\\)"]],processEscapes:!0,skipTags:["script","noscript","style","textarea","pre","code"]}}),MathJax.Hub.Queue(function(){var a,e=MathJax.Hub.getAllJax();for(a=0;a<e.length;a+=1)e[a].SourceElement().parentNode.className+=" has-jax"})
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
 
 <div class="scroll" id="scroll">
     <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#comments" title="查看评论"><i class="fa fa-comments-o"></i></a>
     <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
 </div>
 <script>
@@ -523,12 +546,12 @@
         var oOpenInNew = {
             
             
+             post: ".copyright a[href]", 
             
             
             
             
-             archives: ".archive-article-title", 
-             miniArchives: "a.post-list-link", 
+            
             
              friends: "#js-friends a", 
              socail: ".social a" 
@@ -548,7 +571,7 @@
                 clearTimeout(titleTime);
             }
             else {
-                document.title = "(*´∇｀*)" + originTitle;
+                document.title = "(*´∇｀*)~ " + originTitle;
                 titleTime = setTimeout(function() {
                     document.title = originTitle;
                 }, 2000);
@@ -556,10 +579,18 @@
         })
     </script>
 
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
-  </div>
-<script type="text/javascript" src="/js/clicklove.js"></script>
 
+</div>
+
+<link href="//cdn.bootcss.com/aos/2.2.0/aos.css" rel="stylesheet">
+<script type="text/javascript">
+  AOS.init({
+    easing: 'ease-out-back', once: true,
+  })
+</script>
+<!--<script type="text/javascript" src="//cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>-->
+<!--<script>var userAgent=window.navigator.userAgent;bubbly({blur:1,bubbleFunc:()=>`hsla(${Math.random() * 50}, 100%, 50%, .3)`,bubbles:userAgent.match(/AppleWebKit.*Mobile.*/)?15:30,colorStart:"#fff4e6",colorStop:"#ffe9e4",compose:"source-over"})</script>-->
 </body>
 </html>

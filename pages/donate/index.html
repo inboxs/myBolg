@@ -4,39 +4,37 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="mengkun">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
     <title>万能收款码</title>
-    <!-- baidu -->
+
     <script>
-      var _hmt = _hmt || [];
-      (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?27d272c9cede617ad34ef8720b67cb34";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-    <!-- baidu -->
-    <script>
+    /*
+    以下内容请用专门的 Html 编辑器(如 notepad++)进行编辑，切勿直接用记事本编辑，否则可能出现中文乱码！
+    */
     var setting = {
-        // 在以下双引号中粘贴QQ钱包收款链接
+        /* 在以下【双引号】中粘贴QQ钱包收款链接 */
         qqUrl: "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=CAEQh5qHAhiEnP_qBQ%3D%3D_xxx_sign&u=4312327&n=%E2%95%B0%EF%BC%8A%CC%B6M%CC%B6r%CC%B6.%CC%B6R%CC%B6o%CC%B6b%CC%B60%CC%B6t%CC%B6%EF%BC%8A",
 
-        // 在以下双引号中粘贴微信收款链接
+        /* 在以下【双引号】中粘贴微信收款链接 */
         wechatUrl: "wxp://f2f054ipf0a082ffOLqnvyUF5GbNAmBqy_sw",
 
-        // 在以下双引号中粘贴支付宝收款链接
+        /* 在以下【双引号】中粘贴支付宝收款链接 */
         aliUrl: "HTTPS://QR.ALIPAY.COM/FKX01707EKJ9N1XRWD27Z7D",
 
-
-        // 用于动态生成二维码的API，不需要修改。
-        qrcodeApi: "http://www.kuaizhan.com/common/encode-png?large=true&data="
+        // 用于动态生成二维码的API，一般不需要修改。
+        qrcodeApi: "https://www.kuaizhan.com/common/encode-png?large=true&data="
         /*
         备用二维码api：
         http://s.jiathis.com/qrcode.php?url=
-        http://www.kuaizhan.com/common/encode-png?large=true&data=
+        https://www.kuaizhan.com/common/encode-png?large=true&data=
         http://b.bshare.cn/barCode?site=weixin&url=
-        http://pan.baidu.com/share/qrcode?w=150&h=150&url=
-        http://qr.liantu.com/api.php?text=
+        https://api.qrserver.com/v1/create-qr-code/?size=150x150&margin=10&data=
+        http://qr.topscan.com/api.php?text=
+        https://bshare.optimix.asia/barCode?site=weixin&url=
+        https://www.zhihu.com/qrcode?url=
+
         */
     }
     </script>
@@ -132,19 +130,24 @@
     </div>
 
     <script>
+    if(!(/^http(s*):\/\//.test(location.href)) || /^http(s*):\/\/localhost/.test(location.href)) {
+        alert('本收款码需要网站空间进行中转，请先部署到网站下再访问');
+        window.location.href='https://t00ls.cn';
+    }
+
     if(navigator.userAgent.match(/Alipay/i)) {
-        // 支付宝
+        /* 支付宝 */
         window.location.href = setting.aliUrl;
     } else if(navigator.userAgent.match(/MicroMessenger\//i)) {
-        // 微信
+        /* 微信 */
         document.getElementById("wechat-url").src = setting.qrcodeApi + urlEncode(setting.wechatUrl);
         document.getElementById("code-wechat").style.display = "block";
     } else if(navigator.userAgent.match(/QQ\//i)) {
-        // QQ
+        /* QQ */
         document.getElementById("qq-url").src = setting.qrcodeApi + urlEncode(setting.qqUrl);
         document.getElementById("code-qq").style.display = "block";
     } else {
-        // 其它，显示“万能码”
+        /* 其它，显示“万能码” */
         document.getElementById("page-url").src = setting.qrcodeApi + urlEncode(window.location.href);
         document.getElementById("code-all").style.display = "block";
     }
@@ -158,5 +161,6 @@
         return encodeURIComponent(String).replace(/'/g,"%27").replace(/"/g,"%22");
     }
     </script>
+
 </body>
 </html>

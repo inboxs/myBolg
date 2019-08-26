@@ -27,17 +27,20 @@ define([], function(){
     }
     //第三步 -- 根据数据渲染DOM
     var renderDOM = function(){
-        //生成节点
-        var $viewer = document.createElement("div");
-        $viewer.id = "viewer";
-        $viewer.className = "hide";
+        var $viewer = document.getElementById("viewer");
+        if (!$viewer) {
+            //生成节点
+            $viewer = document.createElement("div");
+            $viewer.id = "viewer";
+            $viewer.className = "hide";
+        }
         $tag = document.getElementById("js-tagcloud");
         $aboutme = document.getElementById("js-aboutme");
         $friends = document.getElementById("js-friends");
         function menuList(name) {
             return $("link.menu-list").attr(name);
-        };
-        var tagStr = $tag?'<span class="viewer-title">'+ menuList("tags") + '</span><div class="viewer-div tagcloud" id="js-mobile-tagcloud"></div>':"";
+        }
+      var tagStr = $tag?'<span class="viewer-title">'+ menuList("tags") + '</span><div class="viewer-div tagcloud" id="js-mobile-tagcloud"></div>':"";
         var friendsStr = $friends?'<span class="viewer-title">'+ menuList("friends") + '</span><div class="viewer-div friends" id="js-mobile-friends"></div>':"";
         var aboutmeStr = $aboutme?'<span class="viewer-title">'+ menuList("about") + '</span><div class="viewer-div aboutme" id="js-mobile-aboutme"></div>':"";
 
@@ -79,7 +82,7 @@ define([], function(){
     //第四步 -- 绑定 DOM 事件
     var bindDOM = function(){
         var scaleW = scaleW;
-        
+
         //滑动隐藏
         document.getElementById("viewer-box").addEventListener("webkitTransitionEnd", function(){
 
@@ -88,7 +91,7 @@ define([], function(){
                 _isShow = true;
             }else{
             }
-            
+
         }, false);
 
         //点击展示和隐藏
@@ -140,7 +143,7 @@ define([], function(){
     };
 
     return{
-        init: function(){
+        init: function() {
             //构造函数需要的参数
             ctn = document.getElementsByClassName("slider-trigger")[0];
             //构造四步
@@ -149,6 +152,6 @@ define([], function(){
             combine();
             bindDOM();
             resetTags();
-        }
+        },
     }
 })

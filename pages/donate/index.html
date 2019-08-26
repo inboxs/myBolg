@@ -129,10 +129,7 @@
     </div>
 
     <script>
-    if(!(/^http(s*):\/\//.test(location.href)) || /^http(s*):\/\/localhost/.test(location.href)) {
-        alert('本收款码需要网站空间进行中转，请先部署到网站下再访问');
-        window.location.href='https://t00ls.cn';
-    }
+
 
     if(navigator.userAgent.match(/Alipay/i)) {
         /* 支付宝 */
